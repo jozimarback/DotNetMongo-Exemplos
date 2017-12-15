@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 2013
-VisualStudioVersion = 12.0.40629.0
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2003
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Mongo.Repository", "DotNet.Mongo.Repository\DotNet.Mongo.Repository.csproj", "{028242B5-32C0-4643-9A91-4D9BAB2AA85D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{BD0CE4C5-FADA-43B1-AE19-1343A8C06CE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -18,5 +20,11 @@ Global
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{028242B5-32C0-4643-9A91-4D9BAB2AA85D} = {BD0CE4C5-FADA-43B1-AE19-1343A8C06CE8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {81789EC0-65FD-4679-86DB-F4C2F6FA7B3D}
 	EndGlobalSection
 EndGlobal
