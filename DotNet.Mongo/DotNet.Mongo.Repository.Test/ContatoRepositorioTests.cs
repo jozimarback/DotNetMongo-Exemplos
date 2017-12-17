@@ -25,5 +25,21 @@ namespace DotNet.Mongo.Repository.Test
 
             Assert.IsNotNull(contatoRepositorio.Obter(contato.Id));
         }
+
+
+        [TestMethod]
+        public void DeveAlterarUmRegistro()
+        {
+            var id = "5a36746afbc8223738f4541d";
+            var novoNomeParaContato = "Contato Alterado";
+
+            var contato = contatoRepositorio.Obter(id);
+            contato.Nome = novoNomeParaContato;
+            contatoRepositorio.Atualizar(contato);
+
+            var contatoAlterado = contatoRepositorio.Obter(id);
+            
+            Assert.AreEqual(novoNomeParaContato,contatoAlterado.Nome);
+        }
     }
 }
