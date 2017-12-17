@@ -1,11 +1,13 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.27130.2003
+VisualStudioVersion = 15.0.27130.2010
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Mongo.Repository", "DotNet.Mongo.Repository\DotNet.Mongo.Repository.csproj", "{028242B5-32C0-4643-9A91-4D9BAB2AA85D}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Repository", "Repository", "{BD0CE4C5-FADA-43B1-AE19-1343A8C06CE8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DotNet.Mongo.Repository.Test", "DotNet.Mongo.Repository.Test\DotNet.Mongo.Repository.Test.csproj", "{5EAD157A-0C43-4FB1-A845-935C202CA0C1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,12 +19,17 @@ Global
 		{028242B5-32C0-4643-9A91-4D9BAB2AA85D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{028242B5-32C0-4643-9A91-4D9BAB2AA85D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{028242B5-32C0-4643-9A91-4D9BAB2AA85D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5EAD157A-0C43-4FB1-A845-935C202CA0C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5EAD157A-0C43-4FB1-A845-935C202CA0C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5EAD157A-0C43-4FB1-A845-935C202CA0C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5EAD157A-0C43-4FB1-A845-935C202CA0C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{028242B5-32C0-4643-9A91-4D9BAB2AA85D} = {BD0CE4C5-FADA-43B1-AE19-1343A8C06CE8}
+		{5EAD157A-0C43-4FB1-A845-935C202CA0C1} = {BD0CE4C5-FADA-43B1-AE19-1343A8C06CE8}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {81789EC0-65FD-4679-86DB-F4C2F6FA7B3D}
