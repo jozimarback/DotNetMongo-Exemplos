@@ -8,7 +8,13 @@ namespace DotNet.Mongo.Repository.Test
     [TestClass]
     public class ContatoRepositorioTests
     {
-        private readonly ContatoRepositorio contatoRepositorio = new ContatoRepositorio();
+        private ContatoRepositorio contatoRepositorio;
+
+        [TestInitialize]
+        public void IncializacaoDeTestes()
+        {
+            contatoRepositorio = new ContatoRepositorio();
+        }
 
         [TestMethod]
         public void DeveInserirUmRegistro()
@@ -40,6 +46,15 @@ namespace DotNet.Mongo.Repository.Test
             var contatoAlterado = contatoRepositorio.Obter(id);
             
             Assert.AreEqual(novoNomeParaContato,contatoAlterado.Nome);
+        }
+
+        [TestMethod]
+        public void DeveRemoverUmRegistro()
+        {
+            var id = "5a36e056fbc82207d05eae53";
+            contatoRepositorio.Remover(id);
+
+            Assert.IsNull(contatoRepositorio.Obter(id));
         }
     }
 }
